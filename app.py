@@ -1,9 +1,10 @@
 import requests
 import datetime
+import os
 from typing import Tuple, List
 
 # Configuración de API Key
-DEEPSEEK_API_KEY = "sk-45273889dcbe407480bb5f35931d01f4"
+DEEPSEEK_API_KEY = os.environ.get("DEEPSEEK_API_KEY")
 
 class DeepSeekImprovementAgent:
     def __init__(self):
